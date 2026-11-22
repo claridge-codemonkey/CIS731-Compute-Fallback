@@ -1,0 +1,22 @@
+#### CIS 731 — PySpark Text Processing and ASR-to-VDB Integration
+
+### Part 1: Text Scrubbing and TF-IDF
+- Modified PySpark text normalization to preserve hyphenated compound words.
+- Implemented tokenization and TF-IDF sparse vector generation.
+- Preserved executed notebook outputs for verification.
+
+### Part 2: Whisper and FAISS Integration
+- Used Whisper `base` for audio transcription of Wilfred Owen's *Anthem for Doomed Youth*.
+- Integrated the transcription into the existing text corpus.
+- Generated semantic embeddings using `all-MiniLM-L6-v2`.
+- Implemented FAISS similarity search for the query "doomed youth."
+
+### CIS 731 Graduate Extension
+- Implemented FAISS index persistence using `faiss.write_index()`.
+- Reloaded the index using `faiss.read_index()`.
+- Queried the reloaded index to verify semantic retrieval.
+
+### Deliverables
+- `lab02.ipynb`
+- `lab03a.ipynb`
+- `lab03b.ipynb`
